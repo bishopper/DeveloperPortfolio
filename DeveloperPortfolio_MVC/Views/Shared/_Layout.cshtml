@@ -32,7 +32,7 @@
 
 				<div id="navigation" class="collapse navbar-collapse flex-column">
 					<div class="profile-section pt-3 pt-lg-0">
-						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/me.jpeg" alt="image">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="~/assets/images/me.jpeg" alt="image">
 
 						<div class="bio mb-3">
 							سلام، حسین عباس آبادی هستم از موسسه آموزشی آتریا. به وبسایت شخصی من خوش
@@ -51,13 +51,13 @@
 					</div>
 					<ul class="navbar-nav flex-column text-right">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">
-								<i class="fas fa-user fa-fw ml-2"></i>صفحه اصلی<span class="sr-only">(current)</span>
+							<a class="nav-link" asp-controller="Home" asp-action="Index">
+								<i class="fas fa-user fa-fw ml-2"></i>صفحه اصلی
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">
-								<i class="fas fa-envelope-open-text fa-fw ml-2"></i>ارتباط با ما
+							<a class="nav-link" asp-controller="Home" asp-action="Contact">
+								<i class="fas fa-envelope-open-text fa-fw ml-2"></i>ارتباط با من
 							</a>
 						</li>
 					</ul>
